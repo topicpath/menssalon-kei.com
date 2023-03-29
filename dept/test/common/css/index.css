@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* ========================================================
+	index.css => indexページ用css
+======================================================== */
+html {
+	overflow-x: hidden;
+}
+
+/* background
+============================================================================================================ */
+#background {
+	position: fixed;
+}
+#background img {
+	display: none;
+}
+
+
+/* main
+============================================================================================================ */
+#headContainer {
+	position: relative;
+	width: 950px;
+	margin: 0 auto 130px;
+	padding: 30px 0 20px;
+}
+#headContainer p {
+	position: absolute;
+	top: 129px;
+	display: none;
+}
+#headContainer p.text01 {
+	left: 190px;
+}
+#headContainer p.text02,
+#headContainer p.text03 {
+	left: 342px;
+}
+
+/* topArea
+============================================================================================================ */
+#topArea {
+	margin-bottom: 30px;
+	zoom: 1;
+}
+#topArea:after {
+	content: "."; display: block; height: 0; clear: both; visibility: hidden; line-height: 0;
+}
+
+
+/* menuArea
+============================================================================================================ */
+#menuArea {
+	float: left;
+	width: 310px;
+	margin-right: 55px;
+	font-size: 109%;
+}
+#menuArea p {
+	float: left;
+}
+#menuArea dl {
+	margin-left: 128px;
+}
+#menuArea dt {
+	float: left;
+}
+#menuArea dd {
+	margin-bottom: 0.35em;
+	padding-bottom: 0.35em;
+	border-bottom: 1px dotted #ced3d5;
+	text-align: right;
+}
+#menuArea dd.last {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+/* messageArea
+============================================================================================================ */
+#messageArea {
+	float: left;
+	width: 260px;
+}
+#messageArea dl {
+	margin: 6px 5px 0;
+	line-height: 1.4;
+}
+#messageArea dl dt {
+	padding-left: 18px;
+	background: url(../../images/message_arrow.png) no-repeat left;
+	color: #231858;
+}
+#messageArea dl dd {
+	margin-bottom: 1em;
+	padding-left: 18px;
+	font-size: 109%;
+}
+
+
+/* leftArea
+============================================================================================================ */
+#leftArea {
+	float: left;
+	width: 365px;
+}
+
+
+/* aboutArea
+============================================================================================================ */
+#aboutArea {
+	margin: 35px 0;
+}
+#aboutArea .img {
+	float: left;
+	padding-right: 12px;
+}
+
+
+/* accessArea
+============================================================================================================ */
+#accessArea h2 {
+	margin-bottom: 5px;
+}
+#accessArea ul {
+	margin: 15px 0;
+	font-size: 109%;
+}
+
+
+/* bottomBnrArea
+============================================================================================================ */
+#bottomBnrArea {
+	margin-top: 60px;
+	zoom: 1;
+}
+#bottomBnrArea:after {
+	content: "."; display: block; height: 0; clear: both; visibility: hidden; line-height: 0;
+}
+#bottomBnrArea li {
+	float: left;
+	padding: 0 5px 8px 0;
+}
+
+
+
+
+/* rightArea
+============================================================================================================ */
+#rightArea {
+	float: left;
+	width: 260px;
+}
+#rightArea ul {
+	zoom: 1;
+}
+#rightArea ul:after {
+	content: "."; display: block; height: 0; clear: both; visibility: hidden; line-height: 0;
+}
+#rightArea ul li {
+	float: left;
+	margin-right: 20px;
+}
+
+/* fudeArea
+============================================================================================================ */
+#fudeArea {
+	margin-bottom: 40px;
+}
+
+
+/* facebook
+============================================================================================================ */
+#facebook {
+	position: relative;
+	left: -10px;
+	margin-bottom: 40px;
+}
+#facebook iframe {
+	vertical-align: bottom;
+/*	background-color: #ffffff;*/
+}

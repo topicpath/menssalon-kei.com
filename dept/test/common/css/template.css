@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/* ========================================================
+	template.css => テンプレート用CSS
+======================================================== */
+html {
+	min-width: 950px;
+}
+body {
+	background: #fefdfb url(../images/page_bg.jpg) top fixed;
+	font-size: 75%;
+	line-height: 1.6;
+	color: #4a4a4a;
+	font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Osaka", "ＭＳ Ｐゴシック", "MS P Gothic", Verdana,Arial, Helvetica, sans-serif;
+}
+table {
+	line-height: 1.6;
+}
+a {
+	color: #137a87;
+}
+a:link, a:visited {
+	text-decoration: underline;
+}
+a:hover, a:active {
+	text-decoration: none;
+}
+
+/* コンテンツ
+============================================================================================================ */
+#contentsContainer {
+	position: relative;
+	width: 950px;
+	margin: 0 auto 60px;
+	z-index: 2;
+}
+#contentsContainer:after {
+	content: "."; display: block; height: 0; clear: both; visibility: hidden; line-height: 0;
+}
+#contentsArea {
+	float: left;
+	width: 665px;
+	font-size: 109%;
+	line-height: 1.9;
+}
+
+
+
+/* サイド
+============================================================================================================ */
+#sideArea {
+	width: 225px;
+	float: right;
+}
+/* ナビ
+-------------------------------------------------------------------------- */
+#sideNavi {
+	position: relative;
+	top: -12px;
+	margin-bottom: 5px;
+}
+#sideNavi li {
+	border-bottom: 1px dotted #ced3d5;
+	background: url(../images/side/navi_arrow.png) no-repeat left;
+}
+#sideNavi li a {
+	display: block;
+	padding: 8px 5px 8px 18px;
+	color: #000000;
+}
+#sideNavi li a:link, #sideNavi li a:visited {
+	text-decoration: none;
+}
+#sideNavi li a:hover, #sideNavi li a:active {
+	text-decoration: underline;
+}
+#sideNavi li strong a {
+	color: #137a87;
+}
+
+/* kei's Message
+-------------------------------------------------------------------------- */
+#sideMessage {
+	position: relative;
+	margin-bottom: 12px;
+}
+#sideMessage .link {
+	position: absolute;
+	right: 0;
+	top: 8px;
+	font-size: 84%;
+}
+#sideMessage .link a {
+	color: #3a4c57;
+}
+#sideMessage div {
+	padding-bottom: 10px;
+	background: url(../images/side/message_bg_bottom.png) no-repeat bottom;
+}
+#sideMessage dl {
+	padding: 10px 10px 8px 14px;
+	background: url(../images/side/message_bg_top.png) no-repeat;
+}
+#sideMessage dl dt {
+	font-size: 92%;
+	line-height: 1.4;
+	padding-left: 18px;
+	background: url(../../message/images/arrow.png) no-repeat 0 0.1em;
+}
+#sideMessage dl dd {
+	padding-left: 18px;
+	line-height: 1.4;
+}
+
+/* オプション
+-------------------------------------------------------------------------- */
+#sideOption {
+	margin-bottom: 20px;
+}
+#sideOption .border {
+	margin-bottom: 2px;
+	border-top: 1px dotted #c1d5d4;
+}
+#sideOption .border li {
+	border-bottom: 1px dotted #c1d5d4;
+}
+/* インフォ
+-------------------------------------------------------------------------- */
+#sideInfo {
+	font-size: 92%;
+}
+#sideInfo .name {
+	margin-bottom: 8px;
+	border-bottom: 1px dotted #d9d9d9;
+}
+#sideInfo dl {
+	margin-top: 1em;
+}
+#sideInfo dt {
+	float: left;
+}
+#sideInfo dd {
+	padding-left: 5em;
+	padding-bottom: 0.2em;
+}
+#sideInfo dd dl {
+	margin: 0;
+}
+#sideInfo dd dd {
+	padding-left: 6em;
+	padding-bottom: 0;
+}
+#sideInfo dt.card {
+	float: none;
+	padding-top: 1em;
+}
+#sideInfo dd.card {
+	padding: 0;
+}
+
+
+
+/* ページトップ
+============================================================================================================ */
+#pagetop {
+	position: relative;
+	width: 950px;
+	margin: 0 auto;
+	text-align: right;
+	z-index: 10;
+}
+
+
+/* フッター
+============================================================================================================ */
+#footer {
+	position: relative;
+	background: #137a87 url(../images/foot/foot_line.gif) repeat-x top;
+	color: #ffffff;
+	z-index: 2;
+}
+#footer p {
+	width: 950px;
+	margin: 0 auto;
+	padding: 1.2em 0 4em;
+	text-align: right;
+	font-size: 92%;
+}
+
+/* ヘッダー
+-------------------------------------------------------------------------- */

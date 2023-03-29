@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* ダッシュボード */
+#dashboard_right_now li a.message-count:before { content: "\f119"; }
+#dashboard_right_now li a.fude_results-count:before { content: "\f540"; }
+#dashboard_right_now li a.fude_qa-count:before { content: "\f125"; }
+
+#dashboard_right_now li.post-count,
+#dashboard_right_now li.page-count,
+#dashboard_right_now li.comment-mod-count,
+#dashboard_right_now li.comment-count {display: none;}
+
+
+/* カスタムフィールド 見出し削除 */
+.acf-field.non_title > .acf-label {
+	display: none;
+}
+
+/* カスタムフィールド ボーダー削除 */
+.acf-field.non_border {
+	border-top: 0;
+	padding-top: 0;
+}
+.acf-field.non_border2 {
+	margin-top: -10px;
+	border-top: 0;
+	padding-top: 0;
+}
+.acf-field.non_border3 {
+	margin-top: -24px;
+	border-top: 0;
+	padding-top: 0;
+}
+
+/* カスタムフィールド thead削除 */
+.acf-field.non_thead thead {
+	display: none;
+}
+
+/* カスタムフィールド リピートフィールド ハンドル削除 */
+.acf-field.non_handle > div > div > table > thead > tr > .acf-row-handle,
+.acf-field.non_handle > div > div > table > tbody > tr > .acf-row-handle {
+	display: none;
+}
+.acf-field.non_handle > div > div > table > thead > tr > .acf-row-handle + th,
+.acf-field.non_handle > div > div > table > thead > tr > .acf-row-handle + td,
+.acf-field.non_handle > div > div > table > tbody > tr > .acf-row-handle + th,
+.acf-field.non_handle > div > div > table > tbody > tr > .acf-row-handle + td {
+	border-left: 0;
+}
+
+/* カスタムフィールド textarea高さ */
+.acf_postbox .field textarea {
+	min-height: 0;
+}
+
+/* カスタムフィールド thead_bg */
+.acf-field.thead_bg thead th {
+	background-color: #fafafa;
+}
+
+/* カスタムフィールド read_only */
+.acf-field .acf_read_only {
+	background-color: #fafafa;
+}
+.acf-field .acf_read_only input[type=text] {
+	border: 0;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* カスタムフィールド title_large */
+.acf-field.title_large > .acf-label {
+	font-size: 18px;
+}
+
+
+
+/* 一覧ページ */
+.wp-list-table.fixed {
+	table-layout: initial;
+}
+
+/* 一覧ページ：「クイック編集」非表示 */
+#the-list .inline {
+	/*display: none;*/
+}
+
+/* 編集ページ：「抜粋」注釈 非表示 */
+#postexcerpt p {
+	display: none;
+}
+
+
+
+/* カテゴリタブ 非表示 */
+.categorydiv .category-tabs {
+	display: none;
+}
+
+/* カテゴリ非表示 */
+#post_shopdiv {
+	display: none;
+}
+
+/* カテゴリ高さ変更 */
+.categorydiv div.tabs-panel {
+	max-height: 500px;
+}
+
+/* カテゴリ検索非表示 */
+/*
+#posts-filter select#cat {
+	display: none;
+}
+*/
+
+/* カテゴリ説明非表示 */
+/*
+.term-description-wrap {
+	display: none;
+}
+*/
+
+/* 独自 */
+#area_category-adder {
+	display: none;
+}
+th#seotitle,
+th#seokeywords,
+th#seodesc {
+	width: 15%;
+}
+
+
+
+/* acf-relationship選択の写真を大きく */
+.acf-relationship .list .acf-rel-item .thumbnail {
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: 0;
+	width: 30px;
+	height: 30px;
+}
+.acf-relationship .list .acf-rel-item .thumbnail,
+.acf-relationship .list .acf-rel-item .thumbnail img {
+	max-width: 30px;
+	max-height: 30px;
+}
+.acf-relationship .selection .values .acf-icon {
+	top: 9px;
+}
+
+
+
+/* アクティビティ */
+#dashboard_new_activity strong {
+	display: block;
+}
+#dashboard_new_activity * + strong {
+	padding-top: 10px;
+	border-top: 1px solid #cccccc;
+}
+#dashboard_new_activity ul {
+	margin-top: 10px;
+}
+#dashboard_new_activity li {
+	padding-top: 6px;
+	border-top: 1px dotted #cccccc;
+}
+#dashboard_new_activity li span {
+	display: block;
+}
+#dashboard_new_activity li .time {
+	float: left;
+	padding-top: 0.2em;
+}
+#dashboard_new_activity li .title {
+	margin-left: 9em;
+}
+#dashboard_new_activity li .posttype {
+	font-size: 10px;
+}
+
+
+/* intuitive-custom-post-order */
+.ui-sortable tr.ui-sortable-placeholder {
+	display: table-row !important;
+	visibility: visible !important;
+	background-color: #ecf5fa;
+	border: 1px solid red !important;
+}
+.ui-sortable tr.ui-sortable-placeholder td {
+	border-top: 3px solid #b2dff3;
+	border-bottom: 3px solid #b2dff3;
+}
+.ui-sortable tr.ui-sortable-placeholder td:first-child {
+	border-left: 3px solid #b2dff3;
+}
+.ui-sortable tr.ui-sortable-placeholder td:last-child {
+	border-right: 3px solid #b2dff3;
+}
+.ui-sortable tr.ui-sortable-helper {
+	background-color: #F9F9F9;
+	border-top: 1px solid #DFDFDF;
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-o-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+

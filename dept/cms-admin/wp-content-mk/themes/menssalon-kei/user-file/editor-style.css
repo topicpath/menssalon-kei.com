@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body#tinymce {
+	font-size: 15px;
+	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック", YuGothic, "メイリオ", "Meiryo", Verdana, Arial, Helvetica, sans-serif;
+	line-height: 1.8;
+}
+body#tinymce a {
+	color: #526ed1;
+	text-decoration: underline;
+}
+body#tinymce p {
+}
+body#tinymce img {
+	height: auto !important;
+}
+
+/*
+body#tinymce.post-type-blog {
+	max-width: 900px;
+}
+*/
+body#tinymce.post-type-blog img {
+	max-width: 100%;
+}
+

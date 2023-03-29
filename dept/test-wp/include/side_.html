@@ -1,0 +1,62 @@
+<?php if($dir[0] != 'message') : ?>
+		<div id="sideMessage">
+			<p><img src="<?php echo $root;?>common/images/side/message_title.png" width="150" height="28" alt="kei's Message" /></p>
+			<p class="link"><a href="<?php echo $root;?>message/">一覧を見る</a></p>
+			<div><dl>
+<?php
+include_once($_SERVER['DOCUMENT_ROOT'] . '/fude/results/xml.php');
+if(file_exists($_SERVER['DOCUMENT_ROOT'] . '/message/data/list.xml')) {
+	$xml = file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/message/data/list.xml');
+	$xml = XML_unserialize($xml);
+	$all_data = $xml['datas']['data'];
+	if(count($all_data['link']) > 0) $all_data = array($all_data);
+	foreach($all_data as $k => $v) : ?>
+				<dt><?php echo $v['date']; ?></dt>
+				<dd><a href="<?php echo $v['link']; ?>"><?php echo $v['title']; ?></a></dd>
+<?php
+		break;
+	endforeach;
+}
+?>
+			</dl></div>
+		<!-- / #sideMessage --></div>
+
+		<dl id="sideOption">
+<?php else: ?>
+		<dl id="sideOption" style="margin-top: -10px;">
+<?php endif; ?>
+			<dt><img src="<?php echo $root;?>common/images/side/privilege_title.png" width="225" height="86" alt="WEB特典 初回限定 ご予約時に「ホームページ見た」で、豊富なレギュラーオプションから無料で一つお試しいただけます。" /></dt>
+			<dd><ul class="border">
+				<li><a href="<?php echo $root;?>menu/#option"><img src="<?php echo $root;?>common/images/side/privilege01_op.png" width="225" height="57" alt="頭皮のサビ取り 米ぬかパワーで皮脂を分解し、毛穴のつまり除去。" /></a></li>
+				<li><a href="<?php echo $root;?>menu/#option"><img src="<?php echo $root;?>common/images/side/privilege02_op.png" width="225" height="57" alt="男前シェーブ アトピー性皮膚炎、カミソリ負けをする方におすすめです。" /></a></li>
+				<li><a href="<?php echo $root;?>menu/#option"><img src="<?php echo $root;?>common/images/side/privilege03_op.png" width="225" height="57" alt="イヤーエステ 専用カミソリによる耳毛剃り。すっきり、さっぱり！" /></a></li>
+			</ul></dd>
+			<dt><img src="<?php echo $root;?>common/images/side/option_title.png" width="152" height="37" alt="その他オプションも多数ご用意しております。" /></dt>
+			<dd><ul>
+				<li><a href="<?php echo $root;?>menu/#recommend"><img src="<?php echo $root;?>common/images/side/option01_op.png" width="225" height="76" alt="親子割" /></a></li>
+			</ul></dd>
+		<!-- / #sideOption --></dl>
+
+		<div id="sideInfo">
+			<p class="name"><img src="<?php echo $root;?>common/images/side/shop_name.png" width="115" height="32" alt="メンズサロン kei" /></p>
+			<p><img src="<?php echo $root;?>common/images/side/shop_tel.png" width="206" height="55" alt="ご予約・お問い合わせはコチラ TEL：011-512-7472" /></p>
+			<address>〒064-0914<br />
+				北海道札幌市中央区南14条西7丁目2-3</address>
+			<dl>
+				<dt>営業時間</dt>
+				<dd><dl>
+					<dt>平日</dt>
+					<dd>9:00～19:30</dd>
+					<dt>日曜・祝日</dt>
+					<dd>8:30～19:00</dd>
+				</dl></dd>
+				<dt></dt>
+				<dd></dd>
+				<dt>定休日</dt>
+				<dd>毎週火曜日、第3月曜日</dd>
+				<dt>駐車場</dt>
+				<dd>あり（1台）</dd>
+				<dt class="card">各種カード・電子マネー使えます</dt>
+				<dd class="card"><img src="<?php echo $root;?>common/images/side/shop_card.png" width="225" height="65" alt="利用可能カード・電子マネー" /></dd>
+			</dl>
+		<!-- / #sideInfo --></div>

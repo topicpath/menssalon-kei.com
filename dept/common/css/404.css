@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+
+#pageTitle h1 {
+	font-size: 30px;
+	color: #137a87;
+}
+.contents404 .lead {
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.contents404 .back_link {
+	margin-top: 40px;
+}
