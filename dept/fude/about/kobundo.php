@@ -72,7 +72,7 @@ include_once "meta.html";
                         <h3><img src="images/k_f_02_title.png" width="177" height="30" alt="胎毛筆・黒檀軸仕様" /></h3>
                         <dl>
                             <dt>価格</dt>
-                            <dd>19,800円(税・送料込)</dd>
+                            <dd>19,800円〜(税・送料込)</dd>
                             <dt>仕様</dt>
                             <dd>高級黒檀軸</dd>
                         </dl>
@@ -84,7 +84,7 @@ include_once "meta.html";
                         <p><img src="images/k_f_03_text.png" width="245" height="44" alt="こだわりの素材を使用し、筆づくりの粋を集めた豪華版です。" /></p>
                         <dl>
                             <dt>価格</dt>
-                            <dd>36,300円 (税・送料込)</dd>
+                            <dd>36,300円〜(税・送料込)</dd>
                             <dt>仕様</dt>
                             <dd>
                                 <ul>
@@ -106,7 +106,7 @@ include_once "meta.html";
                         <p><img src="images/k_f_04_text.png" width="171" height="44" alt="筆司のこだわりが生む、最高級の仕上がり。" /></p>
                         <dl>
                             <dt>価格</dt>
-                            <dd>64,900円 (税・送料込)</dd>
+                            <dd>64,900円〜(税・送料込)</dd>
                             <dt>仕様</dt>
                             <dd>
                                 <ul>
