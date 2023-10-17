@@ -74,13 +74,13 @@ include_once "meta.html";
                 <p><a href="<?php echo home_url(); ?>/menu/"><img src="<?php echo home_url(); ?>/images/menu_img.png" width="114" height="118" alt="メニューリスト" /></a></p>
                 <dl>
                     <dt>調髪</dt>
-                    <dd>4,300円</dd>
+                    <dd>4,600円</dd>
                     <dt>カット</dt>
-                    <dd>3,500円</dd>
+                    <dd>3,800円</dd>
                     <dt>頭皮のさび取り</dt>
-                    <dd>500円～</dd>
+                    <dd>600円～</dd>
                     <dt>男のエステ</dt>
-                    <dd class="last">1,000円</dd>
+                    <dd class="last">1,100円</dd>
                 </dl>
                 <!-- / #menuArea -->
             </div>
